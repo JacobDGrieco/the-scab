@@ -391,3 +391,63 @@ th {
 .thumbLink:hover .thumb {
 	filter: brightness(1.05);
 }
+
+/* --- Brand as a home button --- */
+.brandLink {
+	text-decoration: none;
+	color: inherit;
+}
+
+.brandLink:hover .logo {
+	filter: brightness(1.05);
+}
+
+/* --- Chips (platform / type) --- */
+.chipRow {
+	margin-top: 10px;
+}
+
+.chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	align-items: center;
+}
+
+.chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 6px 10px;
+	border-radius: 999px;
+	border: 1px solid var(--border);
+	background: rgba(0, 0, 0, .22);
+	color: var(--muted);
+	font-size: 12px;
+	line-height: 1;
+	white-space: nowrap;
+}
+
+.chipSvg svg {
+	width: 14px;
+	height: 14px;
+	display: block;
+	fill: currentColor;
+	opacity: .95;
+}
+
+.chipEmoji {
+	font-size: 14px;
+	line-height: 1;
+}
+
+.chipText {
+	transform: translateY(0.5px);
+}
+
+.pillRow {
+	display: flex;
+	gap: 8px;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+}
